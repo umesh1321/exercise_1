@@ -1,0 +1,4 @@
+1. Local IP Adress		-> ifconfig -a
+2. ip Address of google.com	-> ping google.com
+3. check if Internet is working using CLI		->ping -c 3 google.com	(If pinging goes unsuccessful, it means there is a problem with the gateway settings, and you need to reconfigure them.)
+

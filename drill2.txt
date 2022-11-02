@@ -1,0 +1,21 @@
+ 1. Download the contents of "Harry Potter and the Goblet of fire" .
+ wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
+ 
+ 2. Print the first three lines in the book
+ head -3 Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt 
+ 
+ 3. Print the last 10 lines in the book
+ tail -10 Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt 
+ 
+ 4. How many times do the following words occur in the book?
+Harry		->  grep -o -i Harry Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+Ron		->  grep -o -i Ron Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+Hermione	->  grep -o -i Hermione Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+Dumbledore	->  grep -o -i Dumbledore Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+
+ 5. Print lines from 100 through 200 in the book
+sed -n -e '100,200p' Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt 
+
+6. How many unique words are present in the book?
+tr ' ' '\n' < Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | sort | uniq -c | wc -l 
+

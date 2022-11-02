@@ -1,0 +1,12 @@
+1.
+browser's process ids	->		pidof browser_name
+parent process ids	->		echo $PPID
+
+
+2. Stop the browser application from the command line 	->  kill process id
+  
+   
+3,4 List the top 3 processes by CPU usage.		-> top
+ 
+   
+5. Start a Python HTTP server on port 8000	->	python3 -m http.server 8000
